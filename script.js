@@ -160,6 +160,29 @@ console.log(onlyDisney);  // total de pessoas que assistiram os filmes da Disney
 
 // -------------------------------------------------------------------
 
+const pets = [
+    { name: 'Boris', age: 4, gender: 'Male', type: 'Dog' },
+    { name: 'Jimmy', age: 1, gender: 'Male', type: 'Cat' },
+    { name: 'Pérola', age: 2, gender: 'Female', type: 'Dog' },
+    { name: 'Lucy', age: 5, gender: 'Female', type: 'Cat' },
+    { name: 'Cristal', age: 3, gender: 'Female', type: 'Dog' },
+    { name: 'Chico', age: 6, gender: 'Male', type: 'Dog' },
+]
+
+// obter idade dos cães em escala humana
+
+const getDogs = ({ type }) => type === 'Dog';
+const convertToHumanAge = ({ name, age }) => ({
+    name,
+    convertedAge: age * 7,
+});
+
+console.log(
+    pets
+        .filter(getDogs)
+        .map(convertToHumanAge)
+);
+
 
 
 
