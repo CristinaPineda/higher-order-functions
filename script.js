@@ -12,3 +12,19 @@ const numbers = [1, 2, 3]
 const squareNumbers = numbers.map(item => item ** 2 );
 console.log (squareNumbers);
 
+// exemplo com objetos:
+
+const tvShows = [
+    {name: 'Breaking Bad', releaseYear: 2008},
+    {name: 'Mr. Robot', releaseYear: 2015},
+    {name: 'True Detective', releaseYear: 2014},
+    {name: 'Hannibal', releaseYear: 2013},
+    {name: 'The Handmaid\'s Tale', releaseYear: 2017},
+    {name: 'House M.D.', releaseYear: 2004},
+    {name: 'Watchmen', releaseYear: 2019},
+]
+
+// para pegar somente os nomes:
+const showNames = tvShows.map(tvShow => tvShow.name)
+
+console.log(showNames);
