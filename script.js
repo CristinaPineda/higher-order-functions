@@ -25,6 +25,6 @@ const tvShows = [
 ]
 
 // para pegar somente os nomes:
-const showNames = tvShows.map(tvShow => tvShow.name)
+const showNames = tvShows.map(({ name })=> name)
 
 console.log(showNames);
