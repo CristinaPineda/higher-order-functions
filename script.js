@@ -7,25 +7,41 @@
 // pode receber 3 parametros: 
 // .map((item, index, array))
 
-const numbers = [1, 2, 3]
+// const numbers = [1, 2, 3]
 
-const squareNumbers = numbers.map(item => item ** 2 );
-console.log (squareNumbers);
+// const squareNumbers = numbers.map(item => item ** 2 );
+// console.log (squareNumbers);
 
-// exemplo com objetos:
+// // exemplo com objetos:
 
-const tvShows = [
-    {name: 'Breaking Bad', releaseYear: 2008},
-    {name: 'Mr. Robot', releaseYear: 2015},
-    {name: 'True Detective', releaseYear: 2014},
-    {name: 'Hannibal', releaseYear: 2013},
-    {name: 'The Handmaid\'s Tale', releaseYear: 2017},
-    {name: 'House M.D.', releaseYear: 2004},
-    {name: 'Watchmen', releaseYear: 2019},
-]
+// const tvShows = [
+//     {name: 'Breaking Bad', releaseYear: 2008},
+//     {name: 'Mr. Robot', releaseYear: 2015},
+//     {name: 'True Detective', releaseYear: 2014},
+//     {name: 'Hannibal', releaseYear: 2013},
+//     {name: 'The Handmaid\'s Tale', releaseYear: 2017},
+//     {name: 'House M.D.', releaseYear: 2004},
+//     {name: 'Watchmen', releaseYear: 2019},
+// ]
 
-// para pegar somente os nomes:
-const showNames = tvShows.map(({ name })=> name)
+// // para pegar somente os nomes:
+// const showNames = tvShows.map(({ name })=> name)
 
-console.log(showNames);
-console.table(showNames);
+// console.log(showNames);
+// console.table(showNames);
+
+// -------------------------------------------------------------------
+
+// FILTER
+
+// Quando usar filter?
+
+// Baseado em uma condição, você quer obter
+// um novo array com somete alguns itens 
+// do array original
+
+const randomNumbers = [36, 99, 37, 63];
+
+const numbersGreaterThan37 = randomNumbers.filter(item => item > 37);
+
+console.log(numbersGreaterThan37);
