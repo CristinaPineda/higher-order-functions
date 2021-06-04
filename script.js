@@ -28,3 +28,4 @@ const tvShows = [
 const showNames = tvShows.map(({ name })=> name)
 
 console.log(showNames);
+console.table(showNames);
