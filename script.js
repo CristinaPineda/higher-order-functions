@@ -1,9 +1,11 @@
+// function getMultiplier (multiplier) {
+//     return function (aNumber) {
+//         return aNumber * multiplier
+//     }
+// }
 
-function getMultiplier (multiplier) {
-    return function (aNumber) {
-        return aNumber * multiplier
-    }
-}
+// refatorando a função acima 
+const getMultiplier = multiplier => aNumber => aNumber * multiplier
 
 const double = getMultiplier(2);
 const triple = getMultiplier(3);
